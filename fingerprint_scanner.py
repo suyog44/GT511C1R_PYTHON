@@ -117,10 +117,11 @@ def removeAll():
 
 
 def main():
-    print("Remove all identities from scanner")
+    '''print("Remove all identities from scanner")'''
     startScanner()
-    removeAll()
+    '''removeAll()'''
     led()
+    """
     print("Start enroll")
     newID = getEnrollCount()
     print(newID)
@@ -150,7 +151,7 @@ def main():
         enrollFail()
         return
     print("Remove finger")
-    waitForFinger(True)
+    waitForFinger(True)"""
     print("Press finger again to identify")
     waitForFinger(False)
     if captureFinger() < 0:
